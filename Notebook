@@ -3,11 +3,17 @@ WirelessHART（IEC/PAS 62591Ed.1） 和 ZigBee（IEEE 802.15.4）都是无线通
 他们定制的目标都是为了提高无线网络的高可用性，自我组织、自我修复能力，提供可靠、稳定和安全的无线通信。
 在网络定制中都会存在完全功能节点FFD和精简功能节点RFD。FFD类似于路由器而RFD就像是带无线网络功能的传感器、仪表、阀门。
 ZigBee芯片可用于温度、湿度和振动传感器、开关和控制器。ZigBee使用了IEEE 802.15.4（WPAN）技术互联。
+WLC 和 eWLC 的区别是 WLC用了思科的polaris而eWLC用了aireOS
+AP 用了click做系统
+
+
 
 术语：
 平均故障间隔时间（MTBF）
 全功能节点（FFD）
 精简功能节点（RFD）
+接入点（AP）
+无线控制器（WLC/eWLC）
 
 问题：
 HAZLOC（class1/div2/zone2）是什么？
@@ -18,4 +24,7 @@ HART协议
 Modbus通讯协议
 基金会现场总线
 过程现场总线
+
+
+
 
