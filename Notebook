@@ -9,6 +9,9 @@ AP 用了click做系统，cheetah是cisco对click的改动也叫cos。
 ME（Mobility Express）就是cisco做的基于ariros的wlc的express edition。装了me的ap即使ap又是wlc，可以控制其他的ap。组一个可以给小用户用的小网。
 EWC (Embeded Wireless Controller)就是cisco做的基于polaris的wlc的express edition。
 lwapp vs capwap。思科使用的是capwap标准做了ap又叫做unified。公共的标准是lwapp。这里指的是瘦ap的标准。
+autonomous ap指的是自治的ap，ewc就是指autonomous ap因为它内置了ap。
+standalone ap值的是没有办法连接到controller（wc）的ap，也就是说控制层面断了。 但是他也要能自动转发数据包，也能在一定情况下自愈回复连接到controller。
+autonomous 和 standalone应该是相对的。autonomous永远能控制。
 
 
 
