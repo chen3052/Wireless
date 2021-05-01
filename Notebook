@@ -5,6 +5,7 @@ WirelessHART（IEC/PAS 62591Ed.1） 和 ZigBee（IEEE 802.15.4）都是无线通
 ZigBee芯片可用于温度、湿度和振动传感器、开关和控制器。ZigBee使用了IEEE 802.15.4（WPAN）技术互联。
 WLC 和 eWLC 的区别是 WLC用了思科的polaris而eWLC用了aireOS
 AP 用了click做系统，cheetah是cisco对click的改动也叫cos。
+这种AP+WLC的组合叫瘦wifi，家用的都是胖wifi
 
 
 
