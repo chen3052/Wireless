@@ -6,6 +6,7 @@ ZigBee芯片可用于温度、湿度和振动传感器、开关和控制器。Zi
 WLC 和 eWLC 的区别是 WLC用了思科的polaris而eWLC用了aireOS
 AP 用了click做系统，cheetah是cisco对click的改动也叫cos。
 这种AP+WLC的组合叫瘦wifi，家用的都是胖wifi
+ME就是cisco做的基于ariros的wlc的express edition
 
 
 
@@ -15,6 +16,7 @@ AP 用了click做系统，cheetah是cisco对click的改动也叫cos。
 精简功能节点（RFD）
 接入点（AP）
 无线控制器（WLC/eWLC）
+精简版 express edition
 
 问题：
 HAZLOC（class1/div2/zone2）是什么？
