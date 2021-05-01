@@ -4,7 +4,7 @@ WirelessHART（IEC/PAS 62591Ed.1） 和 ZigBee（IEEE 802.15.4）都是无线通
 在网络定制中都会存在完全功能节点FFD和精简功能节点RFD。FFD类似于路由器而RFD就像是带无线网络功能的传感器、仪表、阀门。
 ZigBee芯片可用于温度、湿度和振动传感器、开关和控制器。ZigBee使用了IEEE 802.15.4（WPAN）技术互联。
 WLC 和 eWLC 的区别是 WLC用了思科的polaris而eWLC用了aireOS
-AP 用了click做系统
+AP 用了click做系统，cheetah是cisco对click的改动也叫cos。
 
 
 
