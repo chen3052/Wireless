@@ -39,6 +39,7 @@ flex connect, mesh,local 等ap连接方式有什么不同 local大概就是指do
 dataplan qfp
 btrace iosd loggger
 flex 跟 bridge 跟 mush mode
+record password 怎么弄， box怎么用。
 
 
 技术要点：
