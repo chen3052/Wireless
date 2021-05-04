@@ -14,6 +14,7 @@ standalone ap值的是没有办法连接到controller（wc）的ap，也就是�
 autonomous 和 standalone应该是相对的。autonomous永远能控制。
 duplo就是6300
 CDECT 有个对外接口叫topic可以做duplicate bug 检测。
+Fogdirector ap的可编程容器，给ap做应用部署的。
 
 
 
