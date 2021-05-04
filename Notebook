@@ -16,6 +16,7 @@ duplo就是6300
 CDECT 有个对外接口叫topic可以做duplicate bug 检测。
 Fogdirector ap的可编程容器，给ap做应用部署的。
 mesh我的理解是ap不直接连接到ewlc要通过其他ap转可能形成回路的模式，分bridge 和flex两种，bridge就都送到ewlc处理，flex就是可以ap代为处理。
+rap root ap/ map mesh ap。
 
 
 
