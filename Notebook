@@ -35,7 +35,7 @@ wgb是啥相比较于ewc？wgb听上去就是一个没有ac的ap啊。
 show stop SS是什么意思？
 cabu dnac有么？
 AP WGB啥区别？
-flex connect, mesh,local 等ap连接方式有什么不同
+flex connect, mesh,local 等ap连接方式有什么不同 local大概就是指dot11授权在ap上做到了，flex mesh大概都是到central去做的。
 dataplan qfp
 btrace iosd loggger
 
