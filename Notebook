@@ -38,6 +38,8 @@ AP WGB啥区别？
 flex connect, mesh,local 等ap连接方式有什么不同 local大概就是指dot11授权在ap上做到了，flex mesh大概都是到central去做的。
 dataplan qfp
 btrace iosd loggger
+flex 跟 bridge 跟 mush mode
+
 
 技术要点：
 IEEE 802.15.4无线电和跳频、扩频和网状网络技术
