@@ -45,6 +45,8 @@ record password 怎么弄， box怎么用。
 rap/map是什么
 wgb和ap的区别。
 SE-Connect mode怎么玩。
+从组网来看wgb更像一个wifi client的proxy，功能比多数的wifi chip跟强，可以做跟多的应用开发。但是这个目的是啥？ 又是谁开发的。
+iot wifi的feature大多数来自wnbu，wnbu的feature哪里来看。
 
 
 技术要点：
