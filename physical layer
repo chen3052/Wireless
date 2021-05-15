@@ -22,6 +22,19 @@ RTS/CTS：（Request To Send/Clear To Send，请求发送/允许发送）握手�
 空间复用（SR）&BSSColor着色机制：802.11ax通过BSSColor着色机制实现空间重用，达到信道资源的共享利用，提高信道整体的使用效率。
 Target Wake Times：通过支持AP与STA协商休眠与唤醒时间，减少STA不必要的唤醒，达到节能的目的。
 MCS：Modulation and Coding Scheme，调制与编码策略。编码策略和速度的对应表。MCS8就是第八条索引。
+带宽信道RU示意图：RU（Resource unit）是OFDMA用来区分用户的图。
+SIFS:在802.11系列无线局域网中SIFS是固定值，SIFS是最小的帧间间隔，因此采用SIFS的节点具有访问无线链路的最高优先级。它等于节点从发送状态切换到接收状态并能正确解码所需要的时间，或者从接收状态转为发送状态所需要的时间，在SIFS过期后可能发送的数据包包括ACK、CTS帧，不同标准中规定的SIFS值不同。
+DIFS:DCF Interframe Space(DIFS):在DCF协议中，节点在开始发送数据之前需要监测信道是否空闲。如果信道已经空闲，则节点仍需等待DIFS段时间才开始发送数据；而如果在DIFS时间段内任一时刻信道被监测为忙，则节点不得不推迟它的数据发送。DIFS和SIFS间的计算关系如下：DIFS = SIFS + (2 * Slot time)
+
+参考：
+https://zhuanlan.zhihu.com/p/24416610
+http://www.h3c.com/cn/pub/minisite/201906/WI-FI6/pdf/80211.pdf
+https://jiansoft.net/2020/09/01/introduce_802.11_protocol.html#80211n
+https://support.huawei.com/enterprise/en/doc/EDOC1100086527
+https://www.cnblogs.com/juankai/p/11340246.html
+http://imgtec.eetrend.com/d6-imgtec/blog/2018-07/16910.html#:~:text=Ethenet%E5%92%8CWifi%E9%87%87%E7%94%A8%E7%9A%84,%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9B%B8%E5%85%B3%E7%9A%84%E5%86%85%E5%AE%B9%E3%80%82
+https://www.cnblogs.com/sujz/articles/2044342.html
+
 
 理解：
 OFDM之后有了5GHz
