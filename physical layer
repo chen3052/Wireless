@@ -21,8 +21,8 @@ DSSS FHSS OFDM 都是频道调制技术。而不是多址技术。多址技术�
 频道调制技术是为了提高频道的利用率，而多址技术是比频道调制技术更上层的技术，它的对象是client。换句话说一个client的数据可以走到不同的子频道上。子频道里用qam来提高数据吞吐量。
 802.11a后引入了OFDM QAM64。
 802.11g 继承b，引入OFDM
-802.11n后引入了MIMO。
-802.11ac后引入了MU-MIMO ds, QAM256。
+802.11n n是统一了abg后引入了MIMO。
+802.11ac后引入了MU-MIMO ds, QAM256。wav1和wav2的区别是wav1只支持an，wav2都支持。
 802.11ax后引入了OFDMA, MU-MIMO ds/us, QAM1024。
 
 
