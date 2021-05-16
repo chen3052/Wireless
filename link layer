@@ -17,7 +17,7 @@ sifs < pifs < difs
 
 三地址四地址：主要依据子类型后的帧控制标签，00，01，10都是三地址，11就是4地址，主要用于repeat网络类型。 00一般就是ap发出的信号。01去ds网络的，10是来自ds网络的。
 
-MBSSID：
+MBSSID：思科ap上支持最多16个bssid，一个bssid可以关联到ds里的一个vlan。类似一个hub里面可以有不同的ip网段一样。
 
 省电模式：
 client发送一个non func psp帧给ap，说我睡会，你帮我看着有数据通知我。
