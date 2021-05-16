@@ -3,3 +3,4 @@ airnet 4800 为定位做的。通过蓝牙wifi双定位
 1500 系列是i wifi工业的
 4800 系列是企业的
 1800系列可以做sensor就是数据采集专用。
+SD-Access就是用vxlan替代vlan
