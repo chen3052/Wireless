@@ -9,3 +9,19 @@ pifs：如果遇到冲突，ap在发送前要等待的最小时间间隔
 difs：如果遇到冲突，client在发送前要等待的最小时间间隔
 sifs < pifs < difs
 
+三地址四地址：主要依据子类型后的帧控制标签，00，01，10都是三地址，11就是4地址，主要用于repeat网络类型。 00一般就是ap发出的信号。01去ds网络的，10是来自ds网络的。
+
+帧类型：
+ 控制帧：
+ beacon：ap主动的广播
+ probe request： client根据保存的ap信息主动去问
+ probe reply： ap回probe request
+ authentication request：wep时候用的认证，wpa出来之后就不用的，不过肯定要这个流程
+ authentication reply：wep时候用的认证，wpa出来之后就不用的，不过肯定要这个流程
+ accoication request：相当于请求连接成功
+ accoication reply：相当于回复连接成功
+ deauthentication：就是client主动离开
+ reaccoication request：就是roaming时候用的
+ reaccoication response：就是roaming时候用的
+ 
+
