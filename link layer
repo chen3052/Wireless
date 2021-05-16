@@ -2,3 +2,4 @@
 https://www.youtube.com/watch?v=PoqNvzjKOZA&list=PLkuKHvw9NmzTruTA9AOCq2af7KZk7lO2P&index=14
 
 RTS/CTS 可以用来实现mimo中的多信道绑定。 客户觉得某些信道好，就会在多个信道发送rts. ap会根据频道状况回cts，然后客户就会把数据包发送到这些频道上。
+wifi的qos就是靠回退值来实现。
