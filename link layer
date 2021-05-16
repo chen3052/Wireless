@@ -17,6 +17,11 @@ sifs < pifs < difs
 
 三地址四地址：主要依据子类型后的帧控制标签，00，01，10都是三地址，11就是4地址，主要用于repeat网络类型。 00一般就是ap发出的信号。01去ds网络的，10是来自ds网络的。
 
+省电模式：
+client发送一个non func psp帧给ap，说我睡会，你帮我看着有数据通知我。
+ap会以beacon通知client，也就是最低强制速率通知client有没有数据
+如果client收到beacon说有数据，那就会发送一个psp poll帧去请求发送数据。
+
 帧类型：
  管理帧：
  beacon：ap主动的广播
@@ -26,7 +31,8 @@ sifs < pifs < difs
  authentication reply：wep时候用的认证，wpa出来之后就不用的，不过肯定要这个流程，现在主要用于rssi 和 snr的协商，现在认证都是在关联之后
  accoication request：相当于请求连接成功，协商一个aid，关联id
  accoication reply：相当于回复连接成功，协商一个aid，关联id
- deauthentication：就是client主动离开
+ deauthentication：就是ap发往client主动踢开用的
+ deaccoication：就是ap发往client主动踢开用的
  reaccoication request：就是roaming时候用的
  reaccoication response：就是roaming时候用的
  atim：省电模式帧
@@ -38,5 +44,6 @@ sifs < pifs < difs
  数据帧：
  simple data：普通数据
  non functional：用来扫描用的
+ 
  
 
