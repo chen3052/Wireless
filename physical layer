@@ -33,6 +33,8 @@ CBF：（Compressed BeamformingFeedback，压缩波束成形反馈信息）
 Beacon：
 RSSI：
 CCK: 是一种编码技术，补码键控
+PMP: point to multi point，就是ap为中心的结构
+MESH: station和通过station连接到ap，是一种网状结构
 
 参考：
 https://zhuanlan.zhihu.com/p/24416610
