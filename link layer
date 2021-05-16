@@ -24,6 +24,24 @@ client发送一个non func psp帧给ap，说我睡会，你帮我看着有数据
 ap会以beacon通知client，也就是最低强制速率通知client有没有数据
 如果client收到beacon说有数据，那就会发送一个psp poll帧去请求发送数据。
 
+瘦ap是企业级用的，用wlc来控制给每个ap下策略。而每个ap类似于一个天线
+
+胖ap数据转发流程
+1. client退避后成功发送数据给ap
+2. ap回ack给client
+3. ap把数据转发出去。
+4. ap收到回应包后，回避等待，发送数据给client，等待client ack
+5. client回ack给ap，如果其他client就当没看见
+
+瘦ap数据转发流程：
+1. client退避后成功发送数据给ap
+2. ap回ack给client
+3. ap把数据包封装进了capwap 或者lwapp转发给wlc，可能要根据bssid关联的vlan转发
+4. wlc收到数据包解封装，然后转发出去。
+5. wlc收到回应包后，再capwap封装后转发给ap
+6. ap回避等待后，发送数据给client，等待client ack
+7. client回ack给ap，如果其他client就当没看见
+
 帧类型：
  管理帧：
  beacon：ap主动的广播
