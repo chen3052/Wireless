@@ -22,8 +22,8 @@ sifs < pifs < difs
  beacon：ap主动的广播
  probe request： client根据保存的ap信息主动去问
  probe reply： ap回probe request
- authentication request：wep时候用的认证，wpa出来之后就不用的，不过肯定要这个流程
- authentication reply：wep时候用的认证，wpa出来之后就不用的，不过肯定要这个流程
+ authentication request：wep时候用的认证，wpa出来之后就不用的，不过肯定要这个流程，现在主要用于rssi 和 snr的协商
+ authentication reply：wep时候用的认证，wpa出来之后就不用的，不过肯定要这个流程，现在主要用于rssi 和 snr的协商
  accoication request：相当于请求连接成功
  accoication reply：相当于回复连接成功
  deauthentication：就是client主动离开
