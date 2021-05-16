@@ -31,7 +31,7 @@ UL MU交互：
 空间复用（Spatial Reuse）：OBSS(Overlapping Basic Service Sets)_PD-based spatial reuse，这是一个空间重用的技术，通过识别非关联BSS报文同时控制调整发射功率，来解决同信道干扰问题，以达到空间重用的效果。
 CBF：（Compressed BeamformingFeedback，压缩波束成形反馈信息）
 Beacon：
-RSSI：
+RSSI：接受信号强度，它和snr来描述接受信号的好坏。
 CCK: 是一种编码技术，补码键控
 PMP: point to multi point，就是ap为中心的结构
 MESH: station和通过station连接到ap，是一种网状结构
