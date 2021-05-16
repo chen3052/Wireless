@@ -42,6 +42,8 @@ ap会以beacon通知client，也就是最低强制速率通知client有没有数
 6. ap回避等待后，发送数据给client，等待client ack
 7. client回ack给ap，如果其他client就当没看见
 
+思科的ap出厂都有数字证书来关联wlc
+
 帧类型：
  管理帧：
  beacon：ap主动的广播
