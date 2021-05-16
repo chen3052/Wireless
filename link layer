@@ -12,7 +12,7 @@ sifs < pifs < difs
 三地址四地址：主要依据子类型后的帧控制标签，00，01，10都是三地址，11就是4地址，主要用于repeat网络类型。 00一般就是ap发出的信号。01去ds网络的，10是来自ds网络的。
 
 帧类型：
- 控制帧：
+ 管理帧：
  beacon：ap主动的广播
  probe request： client根据保存的ap信息主动去问
  probe reply： ap回probe request
@@ -24,5 +24,13 @@ sifs < pifs < difs
  reaccoication request：就是roaming时候用的
  reaccoication response：就是roaming时候用的
  atim：省电模式帧
+ 控制帧：
+ RTS: MIMO用的
+ CTS: MIMO用的
+ ACK: 确认用的
+ PSP：省电用的
+ 数据帧：
+ simple data：普通数据
+ non functional：用来扫描用的
  
 
