@@ -23,5 +23,6 @@ sifs < pifs < difs
  deauthentication：就是client主动离开
  reaccoication request：就是roaming时候用的
  reaccoication response：就是roaming时候用的
+ atim：省电模式帧
  
 
