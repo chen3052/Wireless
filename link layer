@@ -2,4 +2,10 @@
 https://www.youtube.com/watch?v=PoqNvzjKOZA&list=PLkuKHvw9NmzTruTA9AOCq2af7KZk7lO2P&index=14
 
 RTS/CTS 可以用来实现mimo中的多信道绑定。 客户觉得某些信道好，就会在多个信道发送rts. ap会根据频道状况回cts，然后客户就会把数据包发送到这些频道上。
-wifi的qos就是靠回退值来实现。
+wifi的qos就是靠回退值来实现,如果video的包，它在cdma/cd里的回退值就一定小于data的，所以她有高优先级发送。
+
+sifs：最小的要等待的时间间隔
+pifs：如果遇到冲突，ap在发送前要等待的最小时间间隔
+difs：如果遇到冲突，client在发送前要等待的最小时间间隔
+sifs < pifs < difs
+
