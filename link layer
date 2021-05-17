@@ -64,7 +64,7 @@ AC 上的接口：
 1. AC上的ap管理接口，主要用作给ap连接用。以前ac的ap管理接口和ac管理接口是分开的。现在可以是同一个。
 2. AC上有很多ssid接口，主要是分配给不通的ap群的。ssid可以给不通的bssid共享。当ap的capwap协商成功，ssid就会发送给对应的ap，ssid接口然后会关联到一个动态接口，动态接口关联到对应的vlan。
 3. ap上来的数据会通过ssid找到对应的动态接口，然后关联的对应的vlan然后发送出去。这里所谓的动态接口其实也是静态配置的。
-4. ap上有一个virtual interface。主要用来做dhcp server。所以必须是一个在ds网络不可以路由的地址。对于每个ap来说它都是固定值，这样才能roaming，不然等于说每个ap的dhcp sever都不同。roaming就耀掉线。
+4. ap上有一个virtual interface。主要用来做dhcp server。所以必须是一个在ap网络不可以路由的地址。对于每个ap来说它都是固定值，就是一个dhcp中继，也可以不让client知道真正的dhcp server是不同的，这样才能roaming，不然等于说每个ap的dhcp sever都不同。roaming就耀掉线。
 
 
 帧类型：
