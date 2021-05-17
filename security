@@ -24,3 +24,9 @@ PTK 握手：
 4. ap收到anonce后，进行mic校验。 ap也拥有了 ptk 和 mic。
 5. ap 发送ptk加密的gtk+mic给 client
 6. client回ak
+
+wpa算密码：
+1. 拿到一个字典，根据字典产生gmk
+2. 使用deauth攻击拿到4次握手包，去除anonce和cnonce ，mac1 mac2. 再结合gmk生成gtk
+3. 根据gtk 和message 去算mic
+4.
