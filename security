@@ -1,0 +1,2 @@
+PTK: pairwire transient key 单波用的key
+GTK：group temporal key 组播用的key。 每次离开一个client就要换密钥
