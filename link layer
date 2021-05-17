@@ -46,6 +46,8 @@ ap会以beacon通知client，也就是最低强制速率通知client有没有数
 
 TLS/DTLS: DTLS就是TLS的udp版本
 
+LWAPP/CAPWAP的区别，LWAPP只要ap和wlc的vlan通就行，两层。 CAPWAP要求ap和wlc的vlan的ip要通。
+
 帧类型：
  管理帧：
  beacon：ap主动的广播
