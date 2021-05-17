@@ -1,6 +1,7 @@
 PTK: pairwire transient key 单波用的key。 = PMK + ANONCE(随机数1) + SNONCE(随机数2) + MAC1（ap mac） + MAC2 （client mac）
-GTK：group temporal key 组播用的key。 每次离开一个client就要换密钥
+GTK：group temporal key 组播用的key。 每次离开一个client就要换密钥。 就是由GMK产生的
 PMK：pairwire master key PTK和GTK都源于PMK = ssid + psk + 4096 次运算生成的256 hash。
+GMK：group master key
 psk：预共享密钥，就是家里wifi密码
 MIC: 增加完整性检测
 deauthorize 攻击： 一个恶意ap截获beacon之后模拟beacon产生deauthorized强制域内client下线。再上线的时候去截获client的wpa包分析，或者逼迫client在多次下线后另外找恶意的ap 上线。
