@@ -15,3 +15,11 @@ arpspoof攻击，ap 和 client之间发生一个攻击，攻击者通过arp告�
 wpa-personal就是wpa
 wpa-enterprise就是802.1x
 wlc可以做aaa服务器如果没有aaa server的话。
+
+PTK 握手：
+1. ap发送明文anonce
+2. client有用了 anonce结合自己的psk snonce和mac1 mac2 生成ptk mic
+3. client 发送snonce 加mic 给ap 
+4. ap收到anonce后，进行mic校验。 ap也拥有了 ptk 和 mic。
+5. ap 发送ptk加密的gtk给 client
+6. client回ak
