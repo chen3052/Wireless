@@ -7,6 +7,8 @@ MIC: 增加完整性检测
 deauthorize 攻击： 一个恶意ap截获beacon之后模拟beacon产生deauthorized强制域内client下线。再上线的时候去截获client的wpa包分析，或者逼迫client在多次下线后另外找恶意的ap 上线。
 防御方法是infrastructure mfp 和client mfp。client mfp需要客户端支持这个功能。 imfp的思路是多个合法ap接到同一个wlc，wlc提供一个mic值带到beacon下发。client mfp的思路是client在登陆后从ap获得一个mic值放到beacon里面。
 
+cisco对付恶意ap的方法，可以在安全里设置rule，对某些信号强度的ap，调用资源进行压制，让她上不了线
+
 wlc的认证也是对于profile生效的，一个profile就是一个ssid
 
 辛巴克一般做两个ssid网络。一个给guest，配置l2 security none，l3 security web。就是网页认证。这是非常不安全的。
