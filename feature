@@ -12,7 +12,7 @@ mesh网络：
 wlan的模式：
 local： 中心转发模式，所有包都走到wlc。也会发点包检查信号
 flexconnect： 即支持ap直接转发，又支持中心转发。也会发点包检查信号
-monitor： 主要工作是检查信号强度
+monitor： 主要工作是检查信号强度，扫描ap，监控空气质量，连接ap
 rogue detector： 把自己伪装成client到处登陆ap，检查是否有非法ap加入公司网络，主要是通知wlc他检查到结果，然后让wlc决定。
 sniffer： 专业的空口抓包。
 bridge：
