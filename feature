@@ -20,7 +20,7 @@ bridge+flex：
 se-connect：
 sensor：
 
-无线瘦wifi架构中是分层的认证的，ISE server是做认证服务器的，下接wlc，再接ap，上层挂了，下层能支持住。
+无线瘦wifi架构中是分层的认证的，ISE server是做认证服务器的就是802.1x，下接wlc有证书，再接ap，上层挂了，下层能支持住。
 flexconnect配置，
 1. 把ap模式改成flexconnect
 2. flexconnect的配置是针对wlan的。一个ap可以有多个wlan，一个wlan走flexconnect，另外一个走local是完全可以的。所以ap可以同时支持local和flexconnect。但是需要映射到不同的vlan去。
