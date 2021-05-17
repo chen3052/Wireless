@@ -25,6 +25,6 @@ flexconnect配置，
 1. 把ap模式改成flexconnect
 2. flexconnect的配置是针对wlan的。一个ap可以有多个wlan，一个wlan走flexconnect，另外一个走local是完全可以的。所以ap可以同时支持local和flexconnect。但是需要映射到不同的vlan去。
 3. 方法就是新建ssid，map vlan，然后到高级里面勾flex connect local switch
-4. 然后到wlc上ap菜单下 flexconnect 面板下勾vlan 支持
+4. 然后到wlc上ap菜单下 flexconnect 面板下勾vlan 支持。 其实这里可以建立ap group来处理，比没个ap处理高效。
 5. native vlan 填写
 6. 点vlan map，可以看到新建的flex connect ssid和原来的local ssid。 flex connect绑定到你在交换机上加的给flexconnect的vlan，做法是先选ap specfic，然后填写对应vlan。 local ssid还是用native vlan
