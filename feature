@@ -21,5 +21,10 @@ se-connect：
 sensor：
 
 无线瘦wifi架构中是分层的认证的，ISE server是做认证服务器的，下接wlc，再接ap，上层挂了，下层能支持住。
-flexconnect 配置模式是针对wlan的。一个ap可以有多个wlan，一个wlan走flexconnect，另外一个走local是完全可以的。所以ap可以同时支持local和flexconnect。但是需要映射到不同的vlan去。
-首先要在wlc增加一个wlan为flexconnect模式。配置wlc和ap之间的交换机支持对应的vlan。当wlc把wlan下发到了ap上，去ap上enable vlan。map对应的vlan到制定的wlan即可。
+flexconnect配置，
+1. 把ap模式改成flexconnect
+2. flexconnect的配置是针对wlan的。一个ap可以有多个wlan，一个wlan走flexconnect，另外一个走local是完全可以的。所以ap可以同时支持local和flexconnect。但是需要映射到不同的vlan去。
+3. 方法就是新建ssid，map vlan，然后到高级里面勾flex connect local switch
+4. 然后到wlc上ap菜单下 flexconnect 面板下勾vlan 支持
+5. native vlan 填写
+6. 点vlan map，可以看到新建的flex connect ssid和原来的local ssid。 flex connect绑定到你在交换机上加的给flexconnect的vlan，做法是先选ap specfic，然后填写对应vlan。 local ssid还是用native vlan
