@@ -19,6 +19,11 @@ wpa-personal就是wpa
 wpa-enterprise就是802.1x
 wlc可以做aaa服务器如果没有aaa server的话。
 
+建立本地802.1x，就是peap
+1. 在local eap里建一个profile
+2. 建ssid，默认是802.1x和wpa2，然后aaa服务器选择local
+3. 建立本地用户。关联到 profile
+
 PTK 握手：
 1. ap发送明文anonce
 2. client有用了 anonce结合自己的psk snonce和mac1 mac2 生成ptk mic
