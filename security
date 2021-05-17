@@ -2,4 +2,4 @@ PTK: pairwire transient key 单波用的key
 GTK：group temporal key 组播用的key。 每次离开一个client就要换密钥
 MIC: 增加完整性检测
 deauthorize 攻击： 一个恶意ap截获beacon之后模拟beacon产生deauthorized强制域内client下线。再上线的时候去截获client的wpa包分析，或者逼迫client在多次下线后另外找恶意的ap 上线。
-
+防御方法是infrastructure mfp 和client mfp。client mfp需要客户端支持这个功能。 imfp的思路是多个合法ap接到同一个wlc，wlc提供一个mic值带到beacon下发。client mfp的思路是client在登陆后从ap获得一个mic值放到beacon里面。
