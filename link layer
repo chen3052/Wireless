@@ -50,6 +50,16 @@ LWAPP/CAPWAP的区别，LWAPP只要ap和wlc的vlan通就行，两层。 CAPWAP�
 
 flexconnect就是ap本地转发的意思，对应的就是通过wlc的中心转发。 vwlc不支持通过自己的转发，只支持flexconnet。本地转发就是数据流不去wlc的，所以一般flexconnect时候ap连接switch都是trunk，如果中心转发就是access
 
+AP发现AC过程：
+1. 看有没有保存AC地址，如果有就直接连接AC
+2. 如果没有发dhcp request
+3. 如果AC AP在同一个网络里，那就直接dhcp，如果不在同一个网络里就dhcp relay
+4. dhcp 使用广播或者224.0.1.140（思科不支持）或者v6 ff0x::18c
+5. dhcp使用option43来存储ac地址，v6的话用option52存ac地址。 option82是指dhcp relay时候的端口交换机地址等
+6. 如果dhcp不成功，也就是没提供ac地址，可以试试dns发现。
+7. 如果没有通过dhcp拿到，那就用默认的dns地址cisco-capwap-controller.localdomain.
+8. dns也有可能带上ac地址发给ap
+
 帧类型：
  管理帧：
  beacon：ap主动的广播
