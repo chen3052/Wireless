@@ -48,6 +48,8 @@ TLS/DTLS: DTLS就是TLS的udp版本
 
 LWAPP/CAPWAP的区别，LWAPP只要ap和wlc的vlan通就行，两层。 CAPWAP要求ap和wlc的vlan的ip要通。
 
+flexconnect就是ap本地转发的意思，对应的就是通过wlc的中心转发。 vwlc不支持通过自己的转发，只支持flexconnet
+
 帧类型：
  管理帧：
  beacon：ap主动的广播
