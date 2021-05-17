@@ -1,5 +1,7 @@
-PTK: pairwire transient key 单波用的key
+PTK: pairwire transient key 单波用的key。 = PMK + ANONCE(随机数1) + SNONCE(随机数2) + MAC1（ap mac） + MAC2 （client mac）
 GTK：group temporal key 组播用的key。 每次离开一个client就要换密钥
+PMK：pairwire master key PTK和GTK都源于PMK = ssid + psk + 4096 次运算生成的256 hash。
+psk：预共享密钥
 MIC: 增加完整性检测
 deauthorize 攻击： 一个恶意ap截获beacon之后模拟beacon产生deauthorized强制域内client下线。再上线的时候去截获client的wpa包分析，或者逼迫client在多次下线后另外找恶意的ap 上线。
 防御方法是infrastructure mfp 和client mfp。client mfp需要客户端支持这个功能。 imfp的思路是多个合法ap接到同一个wlc，wlc提供一个mic值带到beacon下发。client mfp的思路是client在登陆后从ap获得一个mic值放到beacon里面。
@@ -9,3 +11,7 @@ wlc的认证也是对于profile生效的，一个profile就是一个ssid
 辛巴克一般做两个ssid网络。一个给guest，配置l2 security none，l3 security web。就是网页认证。这是非常不安全的。
 
 arpspoof攻击，ap 和 client之间发生一个攻击，攻击者通过arp告诉ap 自己是client，告诉client自己是ap。所有流都会通过攻击者转发而被截获。 可以开始cisco ssid profile的p2p blocking来解决。所以没有加密的网页认证是非常危险的。
+
+wpa-personal就是wpa
+wpa-enterprise就是802.1x
+wlc可以做aaa服务器如果没有aaa server的话。
