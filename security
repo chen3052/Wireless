@@ -21,5 +21,5 @@ PTK 握手：
 2. client有用了 anonce结合自己的psk snonce和mac1 mac2 生成ptk mic
 3. client 发送snonce 加mic 给ap 
 4. ap收到anonce后，进行mic校验。 ap也拥有了 ptk 和 mic。
-5. ap 发送ptk加密的gtk给 client
+5. ap 发送ptk加密的gtk+mic给 client
 6. client回ak
