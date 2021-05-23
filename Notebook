@@ -28,6 +28,8 @@ iot的组播要3个地址，单波要4个地址。
 接入点（AP）
 无线控制器（WLC/eWLC）
 精简版 express edition
+self-healing:指在mesh network中拿掉一个路由器别的node也可以技术寻找别的路去转发。
+self-discovering：是指在mesh network里面加上一个node，能被自动发现。
 
 问题：
 HAZLOC（class1/div2/zone2）是什么？
