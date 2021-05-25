@@ -1,0 +1,5 @@
+1. 怎么改ap的mode bridge/clear/sniffer/monitor/se
+2. 怎么改ap的type，有没有支持多种type的ap
+3. 天线和band的对应表。一个天线都能支持两个band吗？只支持single band的天线接口，给的rf tag确还是两个band都支持的好像，有时候有dual band选，有时候都没选。看上去跟ap type有关系？
+4. ap join profile.是设置ap 和ac之间的一些参数dtls是 ac ap数据加密的方式。EAP是ap和ac之间认证报的格式，ac和radius server之间也是eap格式嘛？
+5.
