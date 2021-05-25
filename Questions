@@ -5,4 +5,5 @@
 5. 如果ap网络里有两个wlc，一个ap为什么不能备份两个wlc
 6. ap 由 ac 上的dhcp 分地址。 能不能用外部的dhcp。 sta 由什么分地址，是怎么在ap上配置的。 
 7. bridge mode是不是就是mesh mode， mesh mode就是 ap分几个wlan出来专门给别的ap进行连接嘛，改成bridge mode还允许 sta接入嘛？ 相对于local和flex mode sta的dhcp地址是不是变成和ap同一个网段。
-8. 像这种bridge mode为什么不是
+8. 像这种bridge mode为什么不是基于wlan的，这样分几个wlan给别的ap连接进来就好了，不用整个ap都改成bridge啊。哈
+
