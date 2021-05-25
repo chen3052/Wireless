@@ -7,4 +7,5 @@
 7. bridge mode是不是就是mesh mode， mesh mode就是 ap分几个wlan出来专门给别的ap进行连接嘛，改成bridge mode还允许 sta接入嘛？ 相对于local和flex mode sta的dhcp地址是不是变成和ap同一个网段。
 8. 像这种bridge mode为什么不是基于wlan的，这样分几个wlan给别的ap连接进来就好了，不用整个ap都改成bridge啊。哈
 9. flex 模式下， local assoicsation， central authorize， switch 具体怎么配置。
+10. 抓包怎么配置。
 
