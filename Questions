@@ -9,4 +9,5 @@
 9. flex 模式下， local assoicsation， central authorize， switch 具体怎么配置。好像在wlan上有配置local authentication， flex profile里面也有local radius authority。 但是说site tag中的policy里面也有可以设置的地方。那个优先。
 10. 抓包怎么配置。
 11. flex bridge 模式。
+12. mesh组网怎么玩，频率是要预先配置好的嘛，授权怎么做？
 
