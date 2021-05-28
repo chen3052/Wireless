@@ -1,5 +1,12 @@
 1. wlc发起的ap抓包试验
 2. 基于wlan的policy profile中的 flex认证转发模式试验。包含中心dhcp 中心switching 中心authentication 实验
+Configuring FlexConnect
+Flex AP Local Authentication with External Radius Server
+FlexConnect with Central and Local Authentication
+NAT-PAT for FlexConnect
+Split Tunneling for FlexConnect
+Configuring VLAN-based Central Switching
+
 3. 安全实验 client 发起的wpa授权实验 和 ap转发eap的到 wlc再转发到radius的实验。
 4. ap加入wlc capwap的实验
 5. 其他capwap协议相关的实验。
