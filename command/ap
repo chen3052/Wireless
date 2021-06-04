@@ -2,3 +2,13 @@ show client summary
 show dot11 clients
 show controllers dot11Radio <radio_slot> client <mac_addr>
 configure ap management add username <usernmae> password <password> secret <enable secret>
+
+WGB:
+# Configuration for joining a wifi SSID, no config mode
+config ssid wgbwifi ssid wgbwifi authentication open (无认证)
+config ssid wgbwifi ssid wgbwifi authentication psk 1234567890 key-management wpa2 (psk 认证)
+config dot11Radio 1 mode wgb ssid wgbwifi (0: 2.4G, 1: 5G, dot11Radio Dot11 radio interface)
+config dot11Radio 1 enable (0: 2.4G, 1: 5G, dot11Radio Dot11 radio interface, Enable the selected radio interface)
+config dot11Radio 1 disable (disable the selected radio interface)
+show ip int b
+https://wiki.cisco.com/pages/viewpage.action?pageId=132752286
