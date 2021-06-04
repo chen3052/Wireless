@@ -1,0 +1,3 @@
+show client summary
+show dot11 clients
+show controllers dot11Radio <radio_slot> client <mac_addr>
